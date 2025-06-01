@@ -35,7 +35,7 @@ carousel.addEventListener('touchmove', (e) => {
   if (!isDown) return;
   e.preventDefault();
   const x = e.touches[0].pageX - carousel.offsetLeft;
-  const walk = (x - startX) * .5; // Adjust multiplier for sensitivity
+  const walk = (x - startX) * 1; // Adjust multiplier for sensitivity
   carousel.scrollLeft -= walk;
 });
 
