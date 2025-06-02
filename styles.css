@@ -1,3 +1,6 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap');
+
 /* Main Theme */
 :root {
   --bg-dark: #121212;
@@ -6,7 +9,7 @@
   --accent: #4fc3f7;
   --hover: #82d9f7;
   --muted: #9e9e9e;
-  --font-body: "Work Sans", sans-serif;
+  --font-body: "Open Sans", sans-serif;
   --font-heading: "Space Grotesk", sans-serif;
 
   --border-radius: 12px;
@@ -43,14 +46,15 @@
 
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: var(--font-body);
   background: var(--bg-dark);
+  font-size: 16px;
   color: var(--text-light);
   line-height: 1.6;
 }
@@ -60,13 +64,9 @@ body {
 } */
 
 .container {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 2rem 1rem;
+  max-width: 1170px;
+  margin: auto;
+  /* padding: 0 15px; */
 }
 
 .site-header {
@@ -83,7 +83,7 @@ body {
 
 .site-header .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -201,8 +201,16 @@ body {
 /* Main Service */
 .services {
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 50px;
   background: linear-gradient(135deg, rgba(79, 195, 247, 0.05), rgba(20, 12, 1, 0.3));
+  text-transform: capitalize;
+}
+
+.services .title {
+  color: var(--accent);
+  font-size: 35px;
+  text-transform: capitalize;
+  list-style: 1.2;
 }
 
 .service-cards {
@@ -223,62 +231,78 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-4px);
-}
-
-/* Testimonials */
-.testimonials {
-  text-align: center;
-  padding: 4rem 1rem 0 0;
-  background: var(--bg-surface);
-  color: var(--text-light);
-  margin-top: 4rem;
-}
-
-.testimonials h2 {
-  font-family: var(--font-heading);
-  color: var(--accent);
-  margin-bottom: 2rem;
-}
-
-.testimonial-carousel {
-  display: flex;
-  gap: 2rem;
-  overflow: hidden;
-  position: relative;
-  /* scroll-snap-type: x mandatory;
-  box-sizing: border-box; */
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  scroll-behavior: smooth;
-}
-
-.testimonial-carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.testimonial {
-  min-width: 250px;
-  max-width: 400px;
-  /* flex: 0 0 300px; */
-  background: var(--bg-dark);
-  color: var(--text-light);
-  border-radius: var(--border-radius, 12px);
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px var(--shadow, rgba(0, 0, 0, 0.4));
-  flex-shrink: 0;
+  transform: translateY(-5px);
   transition: transform 0.3s ease;
 }
 
-.testimonial p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
+/* Testimonials */
+
+.section-header {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.testimonial span {
-  font-size: 0.9rem;
-  color: var(--muted);
+.section-header .title {
+  color: var(--accent);
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+.testimonials {
+  background: linear-gradient(135deg, rgba(79, 195, 247, 0.05), rgba(20, 12, 1, 0.3));
+  padding: 50px;
+}
+
+.testimonials-item {
+  padding: 30px;
+  border-radius: 30px;
+  background-color: var(--bg-surface)
+}
+
+.testimonials-item .info {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials-item img {
+  width: min(150vw, 100px);
+  height: min(150vw, 100px);
+  border-radius: 50%;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.testimonials-item .name {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  /* color: white; */
+  line-height: 1.2;
+}
+
+.testimonials-item p {
+  margin-top: 20px;
+  /* color: var(--accent); */
+}
+
+.testimonials-item .rating {
+    margin-top: 15px;
+    font-size: 14px;
+    color: hsl(36, 88%, 66%);
+}
+
+.testimonials .swiper-pagination {
+    position: relative;
+    margin-top: 40px;
+    bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    background-color: hsl(0, 0%, 100%);
 }
 
 @media (max-width: 600px) {
@@ -293,6 +317,7 @@ body {
     color: var(--text-light);
     text-align: center;
     padding: 4rem 1rem;
+    border-top: solid var(--accent);
   }
   
   .about-section h2 {
@@ -430,7 +455,7 @@ body {
   .newsletter-form input[type="email"] {
     padding: 0.75rem 1rem;
     border: none;
-    border-radius: var(--tokoss-border-radius, 12px);
+    border-radius: var(--border-radius, 12px);
     font-family: var(--font-body);
     width: 250px;
     background: var(--bg-dark);
@@ -446,7 +471,7 @@ body {
     color: var(--bg-dark);
     border: none;
     padding: 0.75rem 1.5rem;
-    border-radius: var(--tokoss-border-radius, 12px);
+    border-radius: var(--border-radius, 12px);
     font-family: var(--font-heading);
     cursor: pointer;
     transition: background 0.3s ease;
