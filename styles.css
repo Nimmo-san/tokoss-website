@@ -262,7 +262,8 @@ body {
 }
 
 .testimonials-item img {
-  max-width: 80px;
+  width: min(150vw, 100px);
+  height: min(150vw, 100px);
   border-radius: 50%;
   margin-right: 20px;
   vertical-align: middle;
