@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tokoss - Clean Shoes, Confident You</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <section class="hero">
@@ -37,31 +41,11 @@
       </div>
     </section>
 
-    <!--  -->
-    <!-- <section class="hero">
-    <div class="container">
-      <h2>Clean Shoes, Confident You</h2>
-      <p>Step into the world with shoes that shine. At Tokoss, we restore your confidence, one pair at a time.</p>
-      <a href="#services" class="btn">Explore Services</a>
-    </div>
-  </section> -->
-    <!--  -->
-    <!-- <section class="hero">
-    <div class="hero-overlay">
-      <div class="container">
-        <h1 class="headline">Confidence Starts with Clean Shoes</h1>
-        <p class="tagline">At Tokoss, we don't just clean shoes—we restore confidence, one pair at a time.</p>
-        <a href="#services" class="btn">Explore Services</a>
-      </div>
-    </div>
-  </section> -->
-
     <!-- services -->
     <section id="services" class="services">
       <div class="container">
         <h2>Our Services</h2>
 
-        <!-- Service Cards -->
         <div class="service-cards">
           <div class="card">
             <h3>Deep Cleaning</h3>
@@ -76,36 +60,93 @@
             <p>Restore shine and protect your shoes for the long haul.</p>
           </div>
         </div>
-
-        <!-- Before & After Slider, skipped for now -->
-
-        <!-- Testimonials -->
-        <!-- <section id="testimonials" class="testimonials">
-          <h2>What Our Clients Say</h2>
-          <div class="testimonial-carousel">
-            <div class="testimonial">
-              <p>"Tokoss made my old sneakers look brand new! Truly magic."</p>
-              <span>- Alex T.</span>
-            </div>
-            <div class="testimonial">
-              <p>
-                "Impressed by the attention to detail. Will definitely come
-                back!"
-              </p>
-              <span>- Priya S.</span>
-            </div>
-            <div class="testimonial">
-              <p>"Fast, reliable, and my shoes have never looked better."</p>
-              <span>- Jordan M.</span>
-            </div>
-            <div class="testimonial">
-              <p>"Exceptional service. Tokoss is my go-to for shoe care."</p>
-              <span>- Casey W.</span>
-            </div>
-          </div>
-        </section> -->
       </div>
     </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="title">What our clients say about us?</h2>
+        </div>
+        <div class="testimonials-content">
+          <div class="swiper testimonials-slider js-testimonials-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="images/2.jpg" alt="img" />
+                  <div class="text-box">
+                    <h3 class="name">Alex T.</h3>
+                  </div>
+                </div>
+                <p>
+                  "Tokoss made my old sneakers look brand new! Truly magic!"
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="images/1.jpg" alt="img" />
+                  <div class="text-box">
+                    <h3 class="name">John D.</h3>
+                  </div>
+                </div>
+                <p>
+                  "Impressed by the attention to detail. Will definitely come back."
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="images/2.jpg" alt="img" />
+                  <div class="text-box">
+                    <h3 class="name">Priya S.</h3>
+                  </div>
+                </div>
+                <p>
+                  "Fast, reliable, and my shoes have never looked better."
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+              <div class="swiper-slide testimonials-item">
+                <div class="info">
+                  <img src="images/3.jpg" alt="img" />
+                  <div class="text-box">
+                    <h3 class="name">Jordan M.</h3>
+                  </div>
+                </div>
+                <p>
+                  "Exceptional service. Tokoss is my go-to for shoe care."
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination js-testimonials-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Before & After Slider, skipped for now -->
 
     <!-- about us -->
     <section id="about" class="about-section">
@@ -200,6 +241,7 @@
       </svg>
     </button>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/parallax.js"></script>
     <script src="scripts/scroll.js"></script>
