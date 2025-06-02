@@ -1,14 +1,14 @@
 //swiper logic
-const swiper = new Swiper(".js-testiomonials-slider", {
+const swiper = new Swiper(".js-testimonials-slider", {
   grabCursor: true,
   spaceBetween: 30,
   pagination: {
-    el: ".js-testiomonials-pagination",
+    el: ".js-testimonials-pagination",
     clickable: true,
   },
   breakpoints: {
     767: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
   },
 });
