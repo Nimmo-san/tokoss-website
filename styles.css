@@ -82,6 +82,19 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
 body {
   font-family: var(--font-body);
   background: var(--bg-dark);
