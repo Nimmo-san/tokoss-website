@@ -36,6 +36,8 @@
   /* Fonts */
   --font-body: "Open Sans", sans-serif;
   --font-heading: "Space Grotesk", sans-serif;
+  --font-h2-size: 2rem;
+  --font-p-size: 1.1rem;
 
   /* UI Elements */
   --border-radius: 12px;
@@ -236,8 +238,9 @@ body {
 }
 
 .services .title {
+  font-family: var(--font-heading);
   color: var(--accent);
-  font-size: 2rem;
+  font-size: var(--font-h2-size);
   text-transform: capitalize;
   list-style: 1.2;
 }
@@ -273,8 +276,9 @@ body {
 }
 
 .section-header .title {
+  font-family: var(--font-heading);;
   color: var(--accent);
-  font-size: 2rem;
+  font-size: var(--font-h2-size);
   font-weight: 600;
   text-transform: capitalize;
   line-height: 1.2;
@@ -351,7 +355,7 @@ body {
   
   .about-section h2 {
     font-family: var(--font-heading);
-    font-size: 2rem;
+    font-size: var(--font-h2-size);
     color: var(--accent);
     margin-bottom: 1rem;
   }
@@ -378,7 +382,7 @@ body {
   
   .contact-section h2 {
     font-family: var(--font-heading);
-    font-size: 2rem;
+    font-size: var(--font-h2-size);
     margin-bottom: 1rem;
     color: var(--accent);
   }
@@ -464,7 +468,7 @@ body {
   }
   
   .newsletter h2 {
-    font-size: 2rem;
+    font-size: var(--font-h2-size);
     font-family: var(--font-heading);
     color: var(--accent);
     margin-bottom: 1rem;
@@ -524,7 +528,7 @@ body {
 
 .social h2 {
   font-family: var(--font-heading);
-  font-size: 2rem;
+  font-size: var(--font-h2-size);
   margin-bottom: 0.5rem;
   color: var(--accent);
 }
@@ -548,7 +552,7 @@ body {
 
 .social-icons a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: var(--font-h2-size);
   color: var(--text-light);
   background: rgba(255, 255, 255, 0.05);
   padding: 0.75rem;
