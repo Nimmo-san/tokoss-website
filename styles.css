@@ -82,12 +82,21 @@
   box-sizing: border-box;
 }
 
-/* html, body {
+html, body {
   height: 100%;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: scroll;
-} */
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 10px;
+}
 
 section {
   min-height: 100vh;
