@@ -595,6 +595,7 @@ body {
   
 /* Site footer */
 #footer {
+    min-height: 30vh;
     background: var(--bg-dark);
     color: var(--muted);
     text-align: center;
