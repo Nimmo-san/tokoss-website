@@ -169,7 +169,7 @@
       </p>
       <!-- action="#" does nothing for now, needs to be connected -->
       <form class="newsletter-form" action="#" method="POST">
-        <input type="email" placeholder="Enter your email" aria-label="Email address" required />
+        <input type="email" placeholder="Enter your email" aria-label="Email address" autocomplete="email" required />
         <button type="submit">Subscribe</button>
       </form>
     </div>
@@ -182,10 +182,10 @@
       <p class="contact-subtext">
         Ready to give your shoes a new life or have general enquiries?
       </p>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
+      <form autocomplete="on">
+        <input type="text" placeholder="Your Name" autocomplete="name" required />
+        <input type="email" placeholder="Your Email" autocomplete="email" required />
+        <textarea placeholder="Your Message" autocomplete="off" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
