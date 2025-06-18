@@ -197,15 +197,15 @@ body {
 }
 
 .nav-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(9px, 9px);
+  transform: rotate(45deg) translate(9px, 9px);
 }
 
 .nav-toggle.active span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .nav-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 @media (max-width: 600px) {
@@ -691,6 +691,16 @@ body {
 #footer .inner {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.inner a {
+  text-decoration: None;
+  color: var(--accent);
+}
+
+.inner a:hover {
+  text-decoration: dotted;
+  font-weight: 600;
 }
 
 #footer .footer-links {
